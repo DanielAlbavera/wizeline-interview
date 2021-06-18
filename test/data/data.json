@@ -1,0 +1,8 @@
+{
+    "testApp": {
+        "login": {
+            "username": "testuser@example.com",
+            "password": "test123"
+        }
+    }
+}
