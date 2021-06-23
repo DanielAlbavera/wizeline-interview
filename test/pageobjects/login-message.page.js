@@ -2,7 +2,7 @@ const Page = require('./page');
 
 class LoginMessagePage extends Page {
   
-    get loginButton () { return $('//button[@class="btn btn-lg btn-primary button-login"]') }
+    get loginButton () { return $('.button-login') }
 
     async showLogin () {
         await (await this.loginButton).click();

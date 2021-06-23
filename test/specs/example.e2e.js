@@ -10,6 +10,7 @@ describe('Test Login Functionality', () => {
         await LoginPage.login(dProvider.getUsername,dProvider.getPassword);
         await expect(NotePage.addNoteButton).toBeExisting();        
     });
+    
 });
 
 

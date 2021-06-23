@@ -2,7 +2,13 @@ const Page = require('./page');
 
 class NotePage extends Page {
     
-    get addNoteButton () { return $('//button[@class="btn btn-lg btn-primary"]'); }
+    get addNoteButton () { return $('.btn-primary'); }
+    get getLastNote () { return $('(//div[@class="list-group"]/a/h4)[last()]'); }
+
+
+    async clickAddNote() {
+        await (await this.addNoteButton).click();
+    }
 
 }
 

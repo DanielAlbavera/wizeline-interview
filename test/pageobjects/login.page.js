@@ -4,7 +4,7 @@ class LoginPage extends Page {
 
     get inputUsername () { return $("//input[@name='login.username']"); }
     get inputPasword () { return $("//input[@name='login.password']"); }
-    get loginButton () { return $('//button[@class="btn btn-lg btn-primary button-login"]'); }
+    get loginButton () { return $('.button-login'); } //.button-login
 
     async login(username, password) {
         await (await this.inputUsername).setValue(username);

@@ -3,6 +3,10 @@
         "login": {
             "username": "testuser@example.com",
             "password": "test123"
+        },
+        "note": {
+            "title": "Test Title",
+            "description": "This is a test for the Add Note Functionality"
         }
     }
 }
